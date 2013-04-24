@@ -1,0 +1,129 @@
+.lens-content {
+    position: relative;
+    height: 450px;
+    width: 50%;
+
+    -webkit-perspective: 400px;
+    -moz-perspective: 400px;
+    perspective: 400px;
+}
+
+.circle {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -100px;
+}
+
+.circle .ring {
+    width: 400px;
+    height: 400px;
+    display: block;
+    position: absolute;
+    background-size: contain;
+    -webkit-animation-delay:0.39s;
+    -moz-animation-delay:0.39s;
+    animation-delay:0.39s;
+}
+
+.circle .ring:nth-child(1) {
+    background: url('../img/ring1.png') no-repeat center;
+
+    -webkit-animation: rotate-ccw 15s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation: rotate-ccw 15s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation: rotate-ccw 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.circle .ring:nth-child(2) {
+    background: url('../img/ring2.png') no-repeat center;
+
+    -webkit-animation: rotate-cw 15s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation: rotate-cw 15s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation: rotate-cw 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.circle .ring:nth-child(3) {
+    background: url('../img/ring3.png') no-repeat center;
+
+    -webkit-animation: rotate-ccw 15s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation: rotate-ccw 15s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation: rotate-ccw 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.circle .ring:nth-child(4) {
+    background: url('../img/ring4.png') no-repeat center;
+
+    -webkit-animation: rotate-cw 15s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation: rotate-cw 15s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation: rotate-cw 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes rotate-ccw {
+    from {
+        -webkit-transform: rotate(360deg);
+    }
+    to {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes rotate-cw {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes rotate-ccw {
+    from {
+        -moz-transform: rotate(360deg);
+    }
+    to {
+        -moz-transform: rotate(0deg);
+    }
+}
+
+@-moz-keyframes rotate-cw {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
